@@ -1,13 +1,15 @@
-const weather = ({city, country, description, wind, temp, time, img}) => {
+import moment from "moment"
+
+const weather = ({name}) => {
     return(
         <div className="card">
-            <h1>{city}</h1>
-            <h2>{country}</h2>
-            <h3>{description}</h3>
-            <h4>{wind} km/h</h4>
-            <h5>{temp} &deg;</h5>
-            <h6>{time}</h6>
-            <img src={`http://openweathermap.org/img/wn/${img}@2x.png`}/>
+                    <h1>{name.name}</h1>
+                    <h2>{name.sys.country}</h2>
+                    <img src={`http://openweathermap.org/img/wn/${name.weather[0].icon}@2x.png`}/>
+                    <h3>{name.weather[0].description}</h3>
+                    <h4>{name.wind.speed} km/h</h4>
+                    <h5>{Math.floor(name.main.temp-273.15)} &deg;</h5>
+                    <h6>{moment().format('YYYY.MM.DD')}</h6>
         </div>
     )
 }
