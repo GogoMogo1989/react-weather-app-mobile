@@ -1,0 +1,29 @@
+.forecastComponents{
+    display:flex;
+    justify-content: space-around;
+}
+
+.forecastCard img{
+    display:flex;
+    justify-content: center;
+}
+
+.forecastCard h3{
+    display:flex;
+    justify-content: center;
+}
+
+.forecastCard h4{
+    display:flex;
+    justify-content: center;
+}
+
+.forecastCard h5{
+    display:flex;
+    justify-content: center;
+}
+
+.forecastCard h6{
+    display:flex;
+    justify-content: center;
+}

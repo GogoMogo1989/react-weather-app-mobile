@@ -1,3 +1,5 @@
+import "./form.css"
+
 const Form = ({loadWeather}) => {
     return(
         <div className="formContainer">
@@ -7,7 +9,7 @@ const Form = ({loadWeather}) => {
                        autoComplete="off" 
                        className="input"
                        name="city" 
-                       placeholder="City"
+                       placeholder="Város"
                        />
             </form>
         </div>
