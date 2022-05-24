@@ -6,6 +6,7 @@
 .forecastCard img{
     display:flex;
     justify-content: center;
+    margin:auto;
 }
 
 .forecastCard h3{
@@ -35,5 +36,5 @@
     -webkit-backdrop-filter: blur( 15.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 15%;
+    width:10%;
 }

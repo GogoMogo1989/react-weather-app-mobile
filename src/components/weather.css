@@ -36,6 +36,7 @@
 .img{
     display:flex;
     justify-content: center;
+    margin:auto;
 }
 
 .card{
@@ -45,6 +46,6 @@
     -webkit-backdrop-filter: blur( 15.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width:15%;
     margin:10px;
+    width:10%;
 }
