@@ -2,7 +2,6 @@ import {useState} from 'react';
 import Weather from './components/weather';
 import Form from './components/form';
 import Forecast from './components/forecast';
-import LoadingMask from './components/loadingMask'
 import './App.css'
 
 const apiKey='97ae44a28d09d602ff074a873467e1d1'
@@ -10,7 +9,6 @@ const apiKey='97ae44a28d09d602ff074a873467e1d1'
 const App = () => {
   
   const [datas, setData] = useState("")
-  const [isPending, setIsPending] =useState(false)
 
   const getWeather =  (event) => {
 
