@@ -12,19 +12,11 @@
     margin:auto;
 }
 
-.forecastCard h3{
-    display:flex;
-    justify-content: center;
-}
-
-.forecastCard h4{
-    display:flex;
-    justify-content: center;
-}
-
 .forecastCard h5{
     display:flex;
     justify-content: center;
+    font-size: 140%;
+    margin:0px;
 }
 
 .forecastCard h6{
