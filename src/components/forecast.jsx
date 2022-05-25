@@ -1,4 +1,5 @@
 import "./forecast.css"
+import { motion } from "framer-motion"
 
 const forecast= ({name}) => {
     return(

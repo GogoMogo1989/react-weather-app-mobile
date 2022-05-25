@@ -10,6 +10,7 @@
     display:flex;
     justify-content: center;
     margin:auto;
+    width:100%;
 }
 
 .forecastCard h5{
@@ -32,7 +33,7 @@
     -webkit-backdrop-filter: blur( 15.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width:30%;
+    width:20%;
     margin-bottom: 50px;
     position: relative;
     animation-name: float;
