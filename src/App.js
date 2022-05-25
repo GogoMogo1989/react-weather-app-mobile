@@ -17,24 +17,19 @@ const App = () => {
     event.preventDefault()
     const city = event.target.elements.city.value
    
-      fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}&lang=hu`)
+      fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`)
               .then(res =>{
                   return res.json()
               })
               .then(data =>{
                   console.log(data)
-                    setIsPending(true)
-                    setTimeout(() => {
                       setData(data)
-                      setIsPending(false)
-                    }, 2000)
               })
   }
 
   return(
     <div className='App'>
       <Form loadWeather={getWeather}/>
-      {isPending && <LoadingMask />}
       {datas && <Weather name={datas}/>}
       {datas && <Forecast name={datas}/>}
     </div>

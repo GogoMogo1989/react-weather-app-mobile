@@ -6,9 +6,8 @@ const weather = ({name}) => {
             <div className="card">
                 <img className="img" src={`http://openweathermap.org/img/wn/${name.list[0].weather[0].icon}@2x.png`} alt="" />
                 <h3>{name.list[0].weather[0].description}</h3>
-                <h4>{name.list[0].wind.speed} km/h</h4>
-                <h5>{Math.floor(name.list[0].main.temp)} &deg;</h5>
-                <h6>{(name.list[0].dt_txt).slice(11,16)}</h6>
+                <h4>{Math.floor(name.list[0].main.temp)} &deg;</h4>
+                <h5>{name.list[0].wind.speed} km/h</h5>
             </div>
         </div>
     )

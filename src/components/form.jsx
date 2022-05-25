@@ -9,7 +9,7 @@ const Form = ({loadWeather}) => {
                        autoComplete="off" 
                        className="input"
                        name="city" 
-                       placeholder="Város"
+                       placeholder="City"
                        />
             </form>
         </div>
