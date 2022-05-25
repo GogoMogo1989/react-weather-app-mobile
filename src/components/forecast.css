@@ -15,13 +15,14 @@
 .forecastCard h5{
     display:flex;
     justify-content: center;
-    font-size: 140%;
+    font-size: 150%;
     margin:0px;
 }
 
 .forecastCard h6{
     display:flex;
     justify-content: center;
+    font-size: 100%;
 }
 
 .forecastCard{
