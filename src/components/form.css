@@ -3,12 +3,14 @@
 .formContainer{
     display:flex;
     justify-content:center;
-    margin-top:50px;
+}
+
+.form{
+    margin-top:20%;
 }
 
 .input{
     text-align: center;
-    padding: 5px;
     font-size: 130%;
     border-width: 1px;
     border-color: #CCCCCC;
